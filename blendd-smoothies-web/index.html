@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#173f26" />
+  <meta name="description" content="BLENDD — fresh smoothies, bowls and good mood. Find your blend." />
+  <title>BLENDD — Blend Your Mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">GOOD MOOD, MADE FRESH <span>✦</span> FREE DELIVERY ON ORDERS OVER ₹299</div>
+  <header class="site-header">
+    <a class="brand" id="brand-home" href="#home" aria-label="Blendd home">
+      <span class="brand-leaf">✦</span><span>BLENDD</span><small>Blend Your Mood.</small>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#menu">Our menu</a><a href="#story">Our story</a><a href="#why">Why Blendd?</a>
+      <button class="account-button" id="account-open">Log in</button>
+      <button class="cart-button" id="cart-open">Your bag <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="storefront-view">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE FRESHNESS GOES A LONG WAY</p>
+        <h1>Blend your<br><em>mood.</em></h1>
+        <p class="hero-sub">Real fruits. Feel-good ingredients.<br>One delicious reason to smile.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story">Get to know us</a></div>
+        <div class="hero-perks"><span>✓ 100% feel-good</span><span>✓ Made fresh daily</span></div>
+      </div>
+      <div class="hero-art" aria-label="Colorful smoothies">
+        <div class="sun-disc"></div>
+        <div class="fruit fruit-one">🍓</div><div class="fruit fruit-two">🥭</div><div class="fruit fruit-three">🫐</div>
+        <div class="cup-row">
+          <div class="smoothie-cup pink"><i></i><b>BLENDD</b><small>Berry happy</small></div>
+          <div class="smoothie-cup yellow"><i></i><b>BLENDD</b><small>Sunshine sip</small></div>
+          <div class="smoothie-cup purple"><i></i><b>BLENDD</b><small>Good mood</small></div>
+        </div>
+        <span class="art-note">sip happens ✳</span>
+      </div>
+      <div class="hero-bottom"><span>01 / FRESH STARTS HERE</span><span>SCROLL TO FEEL GOOD ↓</span></div>
+    </section>
+
+    <section class="mood-strip">
+      <div><span>⚡</span><b>ENERGY</b><small>Power your day</small></div>
+      <div><span>♡</span><b>HAPPINESS</b><small>Little joy in a cup</small></div>
+      <div><span>✿</span><b>HEALTH</b><small>Goodness in every sip</small></div>
+      <div><span>✦</span><b>FRESHNESS</b><small>Always made to order</small></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">PICK YOUR HAPPY</p><h2>The feel-good <em>menu.</em></h2></div><p>From fruity favourites to creamy classics,<br>there's a blend for every kind of day.</p></div>
+      <div class="filters" role="group" aria-label="Filter menu">
+        <button class="filter active" data-filter="all">All blends</button><button class="filter" data-filter="fruit">Fruity</button><button class="filter" data-filter="classic">Classics</button><button class="filter" data-filter="protein">Protein</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="fruit"><div class="product-visual strawberry"><span>🍓</span><small>BESTSELLER</small></div><div class="product-info"><div><h3>Strawberry Crush</h3><p>Strawberry, banana, milk / yogurt</p></div><strong>₹99</strong></div><button class="add-button" data-name="Strawberry Crush" data-price="99">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="classic"><div class="product-visual banana"><span>🍌</span></div><div class="product-info"><div><h3>PB Banana</h3><p>Banana, peanut butter, milk, oats</p></div><strong>₹99</strong></div><button class="add-button" data-name="PB Banana" data-price="99">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="classic"><div class="product-visual choco"><span>🍫</span></div><div class="product-info"><div><h3>Choco Banana</h3><p>Banana, cocoa, chocolate, milk</p></div><strong>₹109</strong></div><button class="add-button" data-name="Choco Banana" data-price="109">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="fruit"><div class="product-visual mango"><span>🥭</span></div><div class="product-info"><div><h3>Mango Cream</h3><p>Mango, yogurt, a little sunshine</p></div><strong>₹119</strong></div><button class="add-button" data-name="Mango Cream" data-price="119">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="fruit"><div class="product-visual berry"><span>🫐</span></div><div class="product-info"><div><h3>Berry Blast</h3><p>Mixed berries, banana, yogurt</p></div><strong>₹129</strong></div><button class="add-button" data-name="Berry Blast" data-price="129">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="fruit"><div class="product-visual tropical"><span>🥥</span></div><div class="product-info"><div><h3>Tropical</h3><p>Mango, pineapple, coconut</p></div><strong>₹119</strong></div><button class="add-button" data-name="Tropical" data-price="119">Add to bag <span>+</span></button></article>
+        <article class="product-card" data-category="protein"><div class="product-visual protein"><span>🥜</span></div><div class="product-info"><div><h3>Protein Blend</h3><p>Banana, peanut butter, oats, protein</p></div><strong>₹149</strong></div><button class="add-button" data-name="Protein Blend" data-price="149">Add to bag <span>+</span></button></article>
+        <article class="product-card bowl-card" data-category="fruit"><div class="product-visual bowl"><span>🥣</span></div><div class="product-info"><div><h3>Berry Bowl</h3><p>Berry smoothie, granola, banana, chia</p></div><strong>₹169</strong></div><button class="add-button" data-name="Berry Bowl" data-price="169">Add to bag <span>+</span></button></article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><div class="story-stamp">GOOD<br>MOOD<br>CLUB ✳</div><span>Fresh is our favourite flavour.</span></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE FROM BLENDD</p><h2>Healthy can be<br><em>happily delicious.</em></h2><p>BLENDD was born from one simple idea: making better-for-you choices easy, tasty and exciting. We bring together real fruit, honest ingredients and a whole lot of good energy.</p><p>Every cup is blended fresh, just for you. No artificial flavours. No boring sips. Just your kind of good mood.</p><a class="button button-outline" href="#why">The Blendd promise ↗</a></div>
+    </section>
+
+    <section class="why-section section-pad" id="why">
+      <p class="eyebrow">THE GOOD STUFF</p><h2>Good for you. <em>Good vibes only.</em></h2>
+      <div class="why-grid"><div><span>01</span><b>Real ingredients</b><p>Fruit-forward blends with ingredients you know and love.</p></div><div><span>02</span><b>Freshly made</b><p>Blended when you order. Never sitting around.</p></div><div><span>03</span><b>Made with love</b><p>A little extra care goes into every single cup.</p></div><div><span>04</span><b>Planet-minded</b><p>Thoughtful choices, with less waste in mind.</p></div></div>
+    </section>
+
+    <section class="cta-section"><div><p class="eyebrow">YOUR NEXT HAPPY MOMENT</p><h2>Find your blend.<br><em>Feel the difference.</em></h2></div><a class="button button-light" href="#menu">Order your favourite ↗</a></section>
+    </div>
+
+    <section class="dashboard section-pad hidden" id="dashboard" aria-live="polite">
+      <div class="dashboard-heading">
+        <div><p class="eyebrow">YOUR BLENDD ACCOUNT</p><h1 id="dashboard-title">Your deliveries</h1></div>
+        <div class="dashboard-actions"><span class="role-badge" id="role-badge"></span><button class="button button-outline" id="logout">Log out</button></div>
+      </div>
+      <div class="dashboard-notice">Demo only: orders and delivery details are saved in this browser. No store receives these orders; this login does not provide real security.</div>
+
+      <div class="dashboard-panel hidden" id="customer-panel">
+        <div class="dashboard-columns">
+          <section class="panel-card">
+            <p class="eyebrow">READY WHEN YOU ARE</p><h2>Delivery details</h2>
+            <p class="panel-intro">Your bag becomes a demo order you can track here.</p>
+            <div class="checkout-summary" id="checkout-summary"></div>
+            <form id="delivery-form" class="delivery-form">
+              <label>Full name<input name="name" autocomplete="name" required></label>
+              <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+              <label>Delivery address<textarea name="address" autocomplete="street-address" rows="3" required></textarea></label>
+              <button class="button button-dark" id="place-order" type="submit">Place demo order</button>
+            </form>
+          </section>
+          <section class="panel-card">
+            <p class="eyebrow">YOUR BLENDS, ON THE WAY</p><h2>Order tracking</h2>
+            <div class="order-list" id="customer-orders"><p class="empty-orders">Your placed orders will show up here.</p></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="dashboard-panel hidden" id="admin-panel">
+        <section class="panel-card">
+          <p class="eyebrow">BLENDD CONTROL ROOM</p><h2>Manage deliveries</h2>
+          <p class="panel-intro">Review demo orders, update delivery status and assign a delivery partner.</p>
+          <div class="order-list" id="admin-orders"><p class="empty-orders">No demo orders yet.</p></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span>BLENDD</span><small>Blend Your Mood.</small></a><p>Real fruits. Real ingredients. Real good mood.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div><small class="copyright">© <span id="year"></span> BLENDD Smoothies. Made with ♥</small></footer>
+
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-head"><h2>Your good mood bag</h2><button id="cart-close" aria-label="Close bag">✕</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is waiting for a little happiness. ✨</p></div>
+    <div class="cart-foot"><div><span>Subtotal</span><strong id="cart-total">₹0</strong></div><button class="button button-dark checkout" id="checkout">Continue to delivery ↗</button><small>Demo order — sign in to add delivery details and track it.</small></div>
+  </aside>
+  <div class="auth-backdrop hidden" id="auth-backdrop">
+    <section class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <button class="auth-close" id="login-close" type="button" aria-label="Close login">✕</button>
+      <p class="eyebrow">WELCOME TO BLENDD</p><h2 id="login-title">Sign in for<br><em>good mood.</em></h2>
+      <form id="login-form" class="delivery-form">
+        <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <p class="login-error" id="login-error" role="alert"></p>
+        <button class="button button-dark" type="submit">Continue ↗</button>
+      </form>
+      <div class="demo-login"><strong>Admin demo</strong><span>admin@blendd.demo</span><span>BlenddAdmin123</span><button id="demo-admin-fill" type="button">Fill admin login</button><small>For this prototype, any other valid email and non-empty password opens the customer panel.</small></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
